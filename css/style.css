@@ -2,10 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script:regular);
 
 body{
-  background-color: #fbeee7;
+  height: 100vh;
+  background-color: #c2a18f;
+  color:  #2e312e;
   font-family: Nanum Pen Script;
   font-size: 3rem;
-  height: 100vh;
 }
 
 .container {
@@ -29,7 +30,13 @@ body{
 .header__title {
   text-align: center;
   font-size: 8rem;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
+}
+
+.header__title span {
+  text-align: center;
+  background-color: #2e312e ;
+  color: #f86009 ;
 }
 
 .header__logo {
@@ -88,7 +95,7 @@ body{
 }
 
 .slider__text-collection {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -118,6 +125,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .slider__pointer:hover {
   cursor: pointer;
 }
@@ -125,11 +133,12 @@ body{
 .slider__pointer-inside{
     width: 1rem;
     height: 1rem;
-    border: 0.125rem solid #000;
-    background-color: #000;
+    border: 0.125rem solid rgb(46, 49, 46);;
+    background-color: rgb(46, 49, 46);;
     border-radius: 50%;
     transition: 0.5s;
 }
+
 .slider__pointer:hover .slider__pointer-inside{
   border-color: #fff;
   background-color: #fff;
@@ -142,7 +151,6 @@ body{
   width: 0.01rem;
   height: 0.01rem;
 }
-
 
 #radio1:checked~.slider__control label:nth-child(1)  div:first-child, 
 #radio2:checked~.slider__control label:nth-child(2) div:first-child,
@@ -214,4 +222,64 @@ body{
   color: rgb(253, 230, 230);
   font-weight: 800;
   transition: 0.5s;
+}
+
+@media screen and (max-width:767px) {
+  .header__title{
+    font-size: 5rem;
+  }
+
+  .header__logo{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .slider {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider__image-collection{
+    order:1;
+  }
+
+  .slider__control{
+    order: 2;
+    min-width: 18rem;
+    justify-content: space-between;
+    margin:1rem 0;
+  }
+
+  .slider__pointer {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .slider__pointer-inside {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.25rem solid rgb(46, 49, 46);
+  }
+
+  .slider__text-collection{
+    order: 3;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:520px) {
+  body {
+    font-size: 2rem;
+  }
+
+  .header__title{
+    font-size: 3.2rem;
+  }
+  
+  .header__logo{
+    width: 3rem;
+    height: 3rem;
+  }
 }
