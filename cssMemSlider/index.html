@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssMemSlider</title>
+  <link rel="shortcut icon" href="./assets/image/png/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class=" header__logo" id="header">
+        <embed src="../cssMemSlider/assets/audio/sound.mp3" />
+        <!-- <audio src="../cssMemSlider/assets/audio/sound.mp3"></audio> -->
+      </div>
+      <h1 class="header__title">Css<span>Mem</span>Slider</h1>
+    </header>
+
+    <div class="slider">
+      <input type="radio" id="radio1" name="slider__radio" class="slider__radio" checked>
+      <input type="radio" id="radio2" name="slider__radio" class="slider__radio">
+      <input type="radio" id="radio3" name="slider__radio" class="slider__radio">
+      <input type="radio" id="radio4" name="slider__radio" class="slider__radio">
+      <input type="radio" id="radio5" name="slider__radio" class="slider__radio">
+
+      <div class="slider__image-collection">
+        <img src="./assets/image/jpg/mem1.jpg" alt="first_mem" class="slider__image">
+        <img src="./assets/image/jpg/mem2.jpg" alt="second_mem" class="slider__image">
+        <img src="./assets/image/jpg/mem3.jpg" alt="third_mem" class="slider__image">
+        <img src="./assets/image/jpg/mem4.jpg" alt="fourth_mem" class="slider__image">
+        <img src="./assets/image/jpg/mem5.jpg" alt="fifth_mem" class="slider__image">
+      </div>
+
+      <div class="slider__text-collection">
+        <p class="slider__text">Debugging? I will fix you!</p>
+        <p class="slider__text">What is programming?</p>
+        <p class="slider__text">Me after writting 10 lines of code:</p>
+        <p class="slider__text">Whatcoding reallyis...</p>
+        <p class="slider__text">The two states of every programmer</p>
+      </div>
+
+      <div class="slider__control">
+        <label for="radio1" class="slider__pointer">
+          <div class="slider__pointer-inside"></div>
+        </label>
+        <label for="radio2" class="slider__pointer">
+          <div class="slider__pointer-inside"></div>
+        </label>
+        <label for="radio3" class="slider__pointer">
+          <div class="slider__pointer-inside"></div>
+        </label>
+        <label for="radio4" class="slider__pointer">
+          <div class="slider__pointer-inside"></div>
+        </label>
+        <label for="radio5" class="slider__pointer">
+          <div class="slider__pointer-inside">
+            <a href="#sliderlink5" class="slider__link5"></a>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__data">
+        <span>©</span>
+        <span>2022</span>
+        <span><a class="footer__link" href="https://github.com/ps0m">github</a></span>
+      </div>
+      <div class="footer__school">
+        <a class="footer__link" href="https://github.com/rolling-scopes-school/tasks/tree/master/stage1">Rolling Scopes
+          School</a>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+
+</html>
