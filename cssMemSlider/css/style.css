@@ -275,11 +275,9 @@ embed{
   }
 
   .slider {
-    min-height: 0;
-    flex: 0 1 auto;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -306,8 +304,9 @@ embed{
   }
 
   .slider__text-collection{
+    width: 100%;
     order: 3;
-    text-align: center;
+    text-align: left;
   }
 }
 
